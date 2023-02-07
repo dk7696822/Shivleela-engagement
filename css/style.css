@@ -594,6 +594,7 @@ a {
 .twitter {
   color: #874562;
   position: relative;
+  display: none;
 }
 
 .music {
