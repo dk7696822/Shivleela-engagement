@@ -11,6 +11,15 @@
   }
 }
 
+body {
+  background-image: url("../flowers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: absolute;
+}
+
 @keyframes fall {
   0% {
     opacity: 0.9;
@@ -379,10 +388,38 @@ img {
 
 .top-right-decoration {
   position: absolute;
-  top: 0;
+  /* object-fit: cover;
+  max-inline-size: 100%;
+  block-size: auto; */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+/* /* top: 0;
   right: 0;
-  display: block;
+  height: 100%; */
+/* display: block; */
+/* 
   height: 100%;
+  object-fit: cover;
+  object-position: bottom; */
+/* max-inline-size: 100%; */
+/* block-size: auto; */
+/* height: 100%;
+  width: 100%; */
+/* /* */
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .top-left-decoration {
@@ -419,29 +456,30 @@ img {
   font-weight: bolder;
   font-style: normal;
   font-size: 32px;
-  color: #674ea7;
+  color: darkmagenta;
   margin: 16px;
   text-align: center;
   position: relative;
 }
 
 .title h3 {
-  font-weight: 300;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 24px;
-  color: #674ea7;
+  color: darkmagenta;
   margin-top: 5px;
   position: relative;
 }
 
 .title p {
-  color: #564861;
+  color: darkred;
   margin: 30px 0 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 16px;
   position: relative;
+  font-weight: bold;
 }
 
 .wrap {
@@ -544,12 +582,12 @@ body {
 }
 
 .date {
-  color: #874562;
+  color: darkgreen;
   font-weight: 900;
 }
 
 .place {
-  color: #874562;
+  color: darkgreen;
   font-weight: 900;
 }
 
